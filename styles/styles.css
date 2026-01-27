@@ -14,3 +14,46 @@
     display: flex;
     gap: 32px;
 }
+
+.header-info-section {
+    display: grid; /* inline-grid??? */
+    grid-template: 45px 180px 130px 157px / 366px 1fr;
+    row-gap: 23px;
+    column-gap: 40px;
+    grid-template-areas: "dots-orange dots-orange"
+    "title title"
+    "txt txt"
+    "bttn dots-blue";
+}
+
+.header-dots-orange {
+    grid-area: dots-orange;
+}
+
+.header-dots-blue {
+    grid-area: dots-blue;
+}
+
+.header-title {
+    grid-area: title;
+}
+
+.header-text {
+    grid-area: txt;
+}
+
+.header-button {
+    grid-area: bttn;
+    block-size: 91px;
+    background-image: var(--accent-color);
+    border-radius: 25px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    text-align: center;
+
+}

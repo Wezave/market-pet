@@ -1,7 +1,10 @@
-/*:root {
+:root {
+    --accent-color: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
 
 }
 
+
+/* 
 @media (width < 1440px) {
     
-}*/
+}*/ 
