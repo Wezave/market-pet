@@ -78,9 +78,13 @@
     inline-size: 366px;
     block-size: 91px;
     background-image: var(--accent-color);
-    border-radius: 25px;
     border: none;
     color: rgb(255, 255, 255);
+
+}
+
+.button {
+    border-radius: 25px;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
@@ -109,4 +113,132 @@
     justify-content: center;
     align-items: end;
     padding-bottom: 15px;
+}
+
+.shadow {
+    box-shadow: 0px 20px 50px 0px rgba(176, 176, 176, 0.2);
+}
+
+.why-profitably {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-block-size: 2094px;
+    padding: 100px 120px;
+}
+
+.why-profitably h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: var(--title-color);
+}
+
+.why-profitably p {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.why-profitably-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 61px;
+    margin: 68px 120px 107px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.why-profitably-list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    inline-size: 644px;
+}
+
+.why-profitably-list-item {
+    position: relative;
+}
+
+.why-profitably-list-item:before {
+  content: '';
+  background-image: url('../images/listPoint.png');
+  position: absolute;
+  width: 30px; 
+  height: 30px;
+  background-size: 30px 30px;
+  left: -41px;
+}
+
+.why-profitably-form {
+    padding: 50px 50px 40px;
+    border-radius: 25px;
+    inline-size: min-content;
+}
+
+.why-profitably-form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 16px;
+    padding: 0;
+}
+
+.why-profitably-form h3 {
+    text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.why-profitably-form fieldset legend {
+    font-weight: 500;
+    font-size: 12px;
+    max-inline-size: 300px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.why-profitably-form fieldset label input {
+    inline-size: 100%;
+    block-size: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(201, 201, 201, 1);
+    padding-left: 12px;
+} 
+
+.form-button {
+    margin-top: 40px;
+    inline-size: 395px;
+    block-size: 94px;   
+    border: 4px solid rgba(71, 167, 227, 1);
+    background-color: transparent;
+    text-wrap: nowrap;
+    color: var(--text-color);
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: center; 
+}
+
+.checkbox-label input {
+    accent-color: rgba(237, 108, 33, 1);
+    inline-size: 20px !important;
+    height: 20px !important;
+}
+
+.checkbox-label span {
+    margin-left: 8px;
+    align-self: center;
+    text-wrap: nowrap;
+    font-weight: 500; 
+    font-size: 10.5px;
+    letter-spacing: 5%;
 }
