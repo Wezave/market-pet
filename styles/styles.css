@@ -2,28 +2,50 @@
     background-image: linear-gradient(180deg, rgba(172, 216, 239, 0.5) -2.24%, rgba(245, 250, 255, 0) 78.75%);
     inline-size: 100%;
     min-block-size: 892px;
+    inline-size: 100%;
 }
 
 .header-menu {
     display: flex;
     justify-content: space-between;
-    padding: 32px 80px 0px;
+    padding-top: 32px;
+    max-inline-size: 1204px;
+    margin: auto;
 }
 
 .header-menu-list {
     display: flex;
     gap: 32px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.button-callback {
+    inline-size: 182px;
+    block-size: 31px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid #83BCDC;
+    font-weight: inherit;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--text-accent-color);
 }
 
 .header-info-section {
-    display: grid; /* inline-grid??? */
-    grid-template: 45px 180px 130px 157px / 366px 1fr;
-    row-gap: 23px;
-    column-gap: 40px;
-    grid-template-areas: "dots-orange dots-orange"
-    "title title"
-    "txt txt"
-    "bttn dots-blue";
+    justify-self: center;
+    display: grid;
+    gap: 23px 42px;
+    grid-template-columns: min-content 1fr 3fr;
+    grid-template-areas: "dots-orange . ."
+                         "title title image"
+                         "txt txt image"
+                         "bttn dots-blue image";
+    margin-top: 65px;
+    margin-left: 120px;
 }
 
 .header-dots-orange {
@@ -32,28 +54,59 @@
 
 .header-dots-blue {
     grid-area: dots-blue;
+
 }
 
 .header-title {
     grid-area: title;
+    font-size: 46px;
+    line-height: 60px;
+    letter-spacing: 1.5%;
 }
 
 .header-text {
     grid-area: txt;
+    font-size: 16px;  
+    line-height: 26px;
+    letter-spacing: 0%;
+    max-inline-size: 640px;
+    padding-bottom: 17px;
 }
 
 .header-button {
     grid-area: bttn;
+    inline-size: 366px;
     block-size: 91px;
     background-image: var(--accent-color);
     border-radius: 25px;
     border: none;
     color: rgb(255, 255, 255);
-    font-family: "Montserrat", sans-serif; 
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.23em;
     text-align: center;
+}
 
+.title-image {
+    grid-area: image;
+    background-image: url("../images/titleImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inline-size: 568px;
+    block-size: 470px;
+}
+
+.header-wave {
+    display: flex;
+    background-image: url("../images/wave.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    block-size: 135px;
+    margin-top: 64px;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 15px;
 }
