@@ -109,7 +109,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     block-size: 135px;
-    margin-top: 64px;
+    margin-top: 27px;
     justify-content: center;
     align-items: end;
     padding-bottom: 15px;
@@ -119,11 +119,13 @@
     box-shadow: 0px 20px 50px 0px rgba(176, 176, 176, 0.2);
 }
 
-.why-profitably {
+.section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-block-size: 2094px;
+}
+
+.why-profitably {
     padding: 100px 120px;
 }
 
@@ -132,6 +134,7 @@
     line-height: 50px;
     font-weight: 700;
     letter-spacing: 0.8px;
+    margin: 12px auto 15px;
     color: var(--title-color);
 }
 
@@ -157,6 +160,7 @@
     flex-direction: column;
     gap: 35px;
     inline-size: 644px;
+    padding-left: 56px;
 }
 
 .why-profitably-list-item {
@@ -214,7 +218,7 @@
 } 
 
 .form-button {
-    margin-top: 40px;
+    margin-top: 24px;
     inline-size: 395px;
     block-size: 94px;   
     border: 4px solid rgba(71, 167, 227, 1);
@@ -241,4 +245,151 @@
     font-weight: 500; 
     font-size: 10.5px;
     letter-spacing: 5%;
+}
+
+.our-services h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 12px auto 60px;
+    color: var(--title-color);
+}
+
+.our-services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 24px 60px;
+  margin-bottom: 60px;
+}
+
+.our-services-list-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    inline-size: 360px;
+    block-size: 143px;
+    border-radius: 18px;
+    padding: 11px 18px;
+}
+
+.our-services-list-item span {
+    inline-size: 207px;
+    font-weight: 400;
+    font-size: 24.25px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    color: rgba(88, 88, 88, 1);
+}
+
+.our-services-list-item span strong {
+    position: relative;
+    font-weight: 400;
+    font-size: 38.94px;
+    line-height: 40px;
+    letter-spacing: -5.5%;
+}
+
+.our-services-list-item span strong::after {
+    content: '';
+    background-image: url('../images/RUB.svg');
+    position: absolute;
+    width: 9px; 
+    height: 11px;
+    background-size: 9px 11px;
+    
+}
+
+.our-services-list-item span p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: rgba(137, 137, 137, 1);
+}
+
+.progress-scale {
+  width: 172px;
+  height: 4px; 
+  border-radius: 10px;
+  background: 
+    linear-gradient(to right, 
+      rgba(255, 155, 84, 1) var(--progress-scale-length), 
+      transparent var(--progress-scale-length)
+    ), rgba(227, 227, 227, 1);
+  box-shadow: 
+    0px 0.74px 2.97px 0px rgba(166, 166, 166, 0.16),
+    inset 0px 0.74px 2.97px 0px rgba(64, 64, 64, 0.16);
+  margin: 8px 0;
+}
+
+.our-services-list-item img {
+    inline-size: 120px;
+    block-size: 120px;
+}
+
+.our-services-list-item:nth-child(2) .progress-scale, .our-services-list-item:nth-child(7) .progress-scale, .our-services-list-item:nth-child(8) .progress-scale {
+  --progress-scale-length: 15%;
+}
+
+.our-services-list-item:nth-child(3) .progress-scale {
+  --progress-scale-length: 79%;
+}
+
+.our-services-list-item:nth-child(5) .progress-scale {
+  --progress-scale-length: 10%;
+}
+
+.our-services-list-item:nth-child(6) .progress-scale {
+  --progress-scale-length: 25%;
+}
+
+.our-services-list-item:nth-child(9) .progress-scale {
+  --progress-scale-length: 59%;
+}
+
+.our-services button {
+    inline-size: 514px;
+    block-size: 83px;  
+    background-image: var(--accent-color);
+    border-radius: 25px;
+    border: none;
+}
+
+.three-steps {
+    inline-size: 100%;
+}
+
+.three-steps-header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/wave.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inline-size: 100%;
+    block-size: 200px;
+    margin-top: 115px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.three-steps-header h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+}
+
+.three-steps-caption {
+    background-image: url('../images/threeStepsBackground.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer {
+    min-height: 1000px;
 }
