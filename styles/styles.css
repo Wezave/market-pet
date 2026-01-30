@@ -517,6 +517,118 @@
     gap: 21px;
     margin-top: 26px;
 }
-footer {
-    min-height: 1000px;
+
+
+.footer {
+    position: relative;
+    background-image: url("../images/footerWave.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    inline-size: 100%;
+    min-block-size: 1116px;
+    margin-top: 160px;
+}
+
+.footer div {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img dots"
+                         "img title"
+                         "img p"
+                         "img button";
+    row-gap: 15px;
+    max-inline-size: 975px;
+    max-block-size: 428px;
+    padding-bottom: 60px;
+}
+
+.footer div img:first-child {
+    grid-area: img;
+    max-inline-size: 610px;
+    margin-left: -82px;
+}
+
+.dots-orange {
+    grid-area: dots;
+    margin-left: -100px;
+}
+.footer h3 {
+    grid-area: title;
+    max-inline-size: 400px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+    color: var(--text-color);
+}
+
+.footer div p {
+    grid-area: p;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    max-inline-size: 330px;
+}
+
+.footer div button {
+    grid-area: button;
+    min-block-size: 68px;
+    max-inline-size: 273px;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 23%;
+    background-image: var(--accent-color);
+    border: none;
+    border-radius: 16px;
+}
+
+.button-arrow {
+    position: absolute;
+    background-image: url("../images/arrowUp.svg");
+    inline-size: 70px;
+    block-size: 70px;
+    border: none;
+    border-radius: 10px;
+    right: 100px;
+    top: 358px;
+}
+
+.footer nav ul {
+    display: flex;
+    gap: 109px
+    ;
+    max-inline-size: 1240px;
+    margin: 70px auto;
+    color: rgb(255, 255, 255);
+}
+
+.footer nav li {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer h4 {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.8px;
+}
+
+.footer p {
+    color: rgba(181, 223, 255, 1);
+}
+
+.social {
+    display: flex;
+    gap: 30px;
 }
