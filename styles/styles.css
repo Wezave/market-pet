@@ -32,7 +32,7 @@
     font-weight: inherit;
     font-size: 12px;
     text-transform: uppercase;
-    color: var(--text-accent-color);
+        
 }
 
 .header-info-section {
@@ -90,6 +90,7 @@
     text-transform: uppercase;
     letter-spacing: 0.23em;
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .title-image {
@@ -297,7 +298,6 @@
     width: 9px; 
     height: 11px;
     background-size: 9px 11px;
-    
 }
 
 .our-services-list-item span p {
@@ -387,14 +387,29 @@
 
 .three-steps-caption {
     display: grid;
+    position: relative;
     inline-size: 100%;
     grid-template-columns: repeat(2, 1fr);
-    background-image: url(../images/lamp.png), url('../images/threeStepsBackground.png');
+    grid-template-rows: repeat(3, 300px);
+    background-image: url('../images/threeStepsBackground.png');
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 140px;
     gap: 15px 50px;
     align-items: center;
+}
+
+.three-steps-caption::before {
+    content: '';
+    background-image: url(../images/lamp.png);
+    position: absolute;
+    width: 423px; 
+    height: 1381px;
+    background-size: 423px 1381px;
+    right: 35%;
+    top: -1px;
+
+
 }
 
 .three-steps-caption img:nth-child(odd), .three-steps-caption div:nth-child(odd) {
@@ -422,6 +437,86 @@
     max-inline-size: 540px;
 }
 
+.three-steps button {
+    margin-top: 150px;
+    inline-size: 366px;
+    block-size: 91px;  
+    background-image: var(--accent-color);
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 120px;
+}
+
+.benefits-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.benefits-header img {
+    block-size: 36px;
+}
+
+.benefits-header h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin: 12px auto 60px;
+    color: var(--title-color);
+    max-inline-size: 700px;
+    text-align: center;
+}
+
+.benefits-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1367px;
+    margin: 0 auto;
+}
+
+.benefits-cards-list {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-inline-size: 1200px;
+    max-block-size: 337px;
+}
+
+.slider-arrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-arrow {
+    left: -83.5px;
+    background-image: url("../images/benefitsLeftButton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.right-arrow {
+    right: -83.5px;
+    background-image: url("../images/benefitsRightButton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.benefits-which-card {
+    display: flex;
+    gap: 21px;
+    margin-top: 26px;
+}
 footer {
     min-height: 1000px;
 }
